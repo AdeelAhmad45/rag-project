@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+node_modules/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+python-rag/faiss_index/*
+!python-rag/faiss_index/.gitkeep
+huggingface-cache/
+.cache/

@@ -1,0 +1,10 @@
+.venv
+venv
+__pycache__
+.pytest_cache
+.cache
+*.pyc
+tests
+.cache
+faiss_index/*
+!faiss_index/.gitkeep

@@ -1,0 +1,173 @@
+DOCUMENT 1: NORTHWIND ANALYTICS HANDBOOK
+
+Northwind Analytics is a fictional company used for this RAG demo.
+
+Headquarters: Seattle, Washington.
+Founded: 2018.
+Primary product: Atlas Insights, a dashboard for supply-chain forecasting.
+
+Support hours: Monday through Friday, 09:00 to 17:00 Pacific Time.
+Support email: help@northwind-analytics.example.
+
+Atlas Insights stores customer forecasts for 18 months.
+Retention of raw telemetry is 90 days.
+
+The on-call rotation is owned by the Reliability Guild.
+Escalation contact for production incidents:
+incident@northwind-analytics.example.
+
+
+DOCUMENT 2: I9 CDR & IPDR ANALYZER USER MANUAL
+
+Version: v1.2025.0715
+Date: 19 July 2025
+Prepared by: iCube Solutions Team
+
+PURPOSE
+The i9 CDR & IPDR Analyzer is software for analyzing imported
+telecommunication records and related datasets.
+
+LOGIN
+Users log in with their username and password. Remember Me is optional.
+
+DASHBOARD
+The dashboard displays imported datasets and provides access to
+CDR, Tower Dump, IPDR, ILD, WhatsApp, Phone Manager, Trio,
+Quad Data, and Suspect Group modules.
+
+CDR MODULE
+CDR means Call Detail Record.
+
+IMPORT
+Supported formats:
+XLS, XLSX, TXT, ZIP, RAR, HTML.
+
+After importing CDR files, enter a crime name or number and save
+the imported data before accessing General Reports.
+
+GENERAL REPORTS
+Includes mapping, summaries, maximum tower stay, other-state contacts,
+roaming, IMEI periods, IMSI periods, and other communication reports.
+
+MAPPING REPORTS
+Includes tower mapping, tower movements, travel history, travelling
+calls, daily first and last calls, conference or hold calls, other-state
+calls, weekday calls, and regular callers.
+
+ANALYSIS REPORTS
+Includes hourly calls, daily summaries, weekday summaries, monthly
+summaries, IMEI call summaries, ISD summaries, roaming summaries,
+hourly cell IDs, and maximum stay locations.
+
+PERIODIC REPORTS
+Includes period-wise roaming, roaming-wise periods, period-wise IMEI,
+IMEI-wise periods, period-wise location, location-wise periods,
+voice-inactive periods, and OFF/Unused periods.
+
+GEO ANALYSIS
+Includes Show Map, Meeting Point, Geo Fencing, and Link Analysis.
+These features help visualize tower locations, movement patterns,
+overlapping locations, and communication relationships.
+
+OTHER CDR FEATURES
+Mixed Calls, CDR filtering, IMEI and SIM usage analysis,
+New/Missing Numbers, Common Numbers, CDR-to-CDR Calls,
+CDR Report Summary, Pattern Analysis, and Split Analysis.
+
+TOWER DUMP MODULE
+Supported features include importing tower dumps, dynamic filters,
+summary reports, common and uncommon numbers, IMEI analysis,
+suspect-group comparisons, split analysis, and numbers activated
+before a crime.
+
+IPDR MODULE
+IPDR supports importing mobile-number, IMEI, public-IP, source-IP,
+port-based, tower/GPRS, reverse-IP, and broadband datasets.
+
+Supported import formats include CSV, Excel, RAR, and ZIP.
+
+IPDR MAPPING
+Displays raw IPDR records and may enrich them with destination IP,
+organization, application, category, country, server location,
+IMEI information, cell tower addresses, and roaming information.
+
+IPDR ANALYSIS
+Includes usage mapping, IP information sessions, IP/port sessions,
+maximum stay sessions, IMEI/MSISDN/IMSI sessions, Geo Analysis,
+common identifiers, suspect-group comparisons, country-wise IPs,
+circle-wise numbers, and split analysis.
+
+IPDR REQUISITION
+Helps prepare relevant session IP information for requests to
+telecom service providers. Identifying B-party numbers requires
+matching appropriate provider-supplied session records.
+
+ILD MODULE
+ILD means International Long Distance. It supports importing ILD
+records and reviewing international communications.
+
+Supported import formats:
+XLS, XLSX, TXT, ZIP, RAR, HTML.
+
+WHATSAPP MODULE
+Supports importing WhatsApp metadata from HTML and TXT files.
+Features include selected reports, common numbers, new/missing
+numbers, searches, IP comparisons, calls reports, messages reports,
+and combined CDR-WhatsApp reports.
+
+PHONE MANAGER
+Imports exported phone data in JSON format. The manual identifies
+the file name as MessagesContacts.json.
+
+TRIO / QUAD DATA
+Combines and compares available CDR, IPDR, WhatsApp, tower dump,
+and ILD information to help identify common records and timelines.
+
+SUSPECT GROUP MANAGER
+Manages groups containing mobile numbers, IMEIs, and person details.
+Supports importing group data from Excel.
+
+UTILITIES
+Includes X Minus Y, Y Minus X, X Plus Y, X * Y, time-zone conversion,
+IP time-zone conversion, IP time-series splitting, and editing IP usage
+information.
+
+SDR IMPORT
+SDR means Subscriber Detail Records.
+Supported formats include TXT, CSV, ACCDB, XLS, XLSX, DB, and DBF.
+Users map source-file columns to the required fields and can save
+column-mapping presets.
+
+INTERNAL DATABASE
+Allows importing locally collected reference data such as hotel,
+electricity, municipality, and gas connection records.
+
+TOWER LOCATOR
+Provides tower-location and cell-ID lookup features, including map
+visualization, sector direction, nearby towers, and radius searches.
+
+SEARCH
+Supports searches involving imported records, mobile numbers,
+IMEIs, cell IDs, IP addresses, IMSIs, SDR information, and other
+available reference datasets.
+
+OSINT SEARCH
+Includes ported-number information, UPI and social-site information,
+and links to product resources and training materials.
+
+CREATE PROFILE
+Combines available suspect information and external records into
+a profile for further review.
+
+MAILBOX MANAGER
+Configures an email account for the application's mailbox features.
+
+MENU OPTIONS
+Includes import tools, deletion, suspect groups, SDR configuration,
+software updates, unwanted-record filters, settings, import logs,
+case transfer, themes, and license information.
+
+SUPPORT
+Company: iCube Solutions
+Email: sales@icubesolution.com
+Website: www.icubesolution.com

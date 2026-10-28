@@ -1,0 +1,45 @@
+python-rag:
+  build: ./python-rag
+  env_file:
+    - .env
+  environment:
+    DOCUMENTS_PATH: /app/documents
+    FAISS_INDEX_PATH: /app/faiss_index
+    OLLAMA_BASE_URL: http://host.docker.internal:11434
+  volumes:
+    - ./python-rag/documents:/app/documents
+    - faiss_data:/app/faiss_index
+  ports:
+    - "${PYTHON_PORT:-8000}:8000"
+  networks:
+    - rag-net
+    command: python ingest.py
+
+  node-app:
+    build: ./node-app
+    env_file:
+      - .env
+    environment:
+      PYTHON_RAG_URL: http://python-rag:8000
+      NODE_PORT: 3000
+    ports:
+      - "${NODE_PORT:-3000}:3000"
+    networks:
+      - rag-net
+    depends_on:
+      python-rag:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+networks:
+  rag-net:
+    driver: bridge
+
+volumes:
+  faiss_data:
